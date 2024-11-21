@@ -1,4 +1,8 @@
+name: 打包 gh-pages
 on: push
+
+permissions:
+    contents: write
 
 jobs:
     npm-build:
