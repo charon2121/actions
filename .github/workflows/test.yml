@@ -19,3 +19,9 @@ jobs:
 
             - name: 构建项目 🛠
               run: npm run build
+            
+            - name: 部署到 githubpages 🚀
+              uses: JamesIves/github-pages-deploy-action@v4.4.1
+              with:
+                branch: gh-pages
+                folder: build
